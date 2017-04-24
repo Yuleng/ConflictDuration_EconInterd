@@ -1,0 +1,143 @@
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ % Short Sectioned Assignment
+ % LaTeX Template
+ % Version 1.0 (5/5/12)
+ %
+ % This template has been downloaded from:
+ % http://www.LaTeXTemplates.com
+ %
+ % Original author:
+ % Frits Wenneker (http://www.howtotex.com)
+ %
+ % License:
+ % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+ %
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ %----------------------------------------------------------------------------------------
+ %    PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+ %----------------------------------------------------------------------------------------
+ 
+ \documentclass[12pt]{article} % A4 paper and 12pt font size
+ 
+ \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+ \usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+ \usepackage[english]{babel} % English language/hyphenation
+ \usepackage{amsmath,amsfonts,amsthm} % Math packages
+ \usepackage{graphicx}
+
+
+ \usepackage{setspace}
+ \usepackage{tikz-qtree}
+ \usetikzlibrary{calc}
+ \doublespacing
+ 
+ 
+ \usepackage{footmisc}
+ \renewcommand{\footnotelayout}{\doublespacing} % set spacing in footnotes
+ \newlength{\myfootnotesep}
+ \setlength{\myfootnotesep}{\baselineskip}
+ \addtolength{\myfootnotesep}{-\footnotesep}
+ \setlength{\footnotesep}{\myfootnotesep}
+ \usepackage{footmisc}
+ \renewcommand*{\footnotelayout}{\normalsize}
+ 
+ 
+ \usepackage[margin=1in]{geometry}
+ 
+ \usepackage{titlesec}
+ \usepackage{appendix}
+ \usepackage{hyperref}
+
+ \usepackage[nomarkers,figuresonly,nofiglist]{endfloat}
+ \renewcommand{\efloatseparator}{\vfill}
+
+ 
+
+
+ 
+ \usepackage{natbib}
+ \bibliographystyle{apsr}
+ 
+\usepackage{caption}
+\captionsetup[figure]{
+	position=above,
+}
+ 
+ \newtheorem{prop}{Proposition}
+ 
+
+ 
+ \usepackage{appendix}
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ \tikzset{
+ 	% Two node styles for game trees: solid and hollow
+ 	solid node/.style={circle,draw,inner sep=2,fill=black},
+ 	hollow node/.style={circle,draw,inner sep=2},
+ 	empty node/.style={rectangle,draw,fill=white,color=white}
+ }
+ 
+ % macro for entering payoffs
+ \newcommand\payoff[1]{
+ 	$\begin{pmatrix} #1 \end{pmatrix}$
+ }
+ 
+ %----------------------------------------------------------------------------------------
+ %    TITLE SECTION
+ %----------------------------------------------------------------------------------------
+ 
+ \newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+ 
+ \title{    
+ 	\normalfont \normalsize 
+ 	\LARGE \textbf{Tug of War: Economic Interdependence and Conflict Duration}\\ % The assignment title
+ 	\author{}
+ }
+ 
+\date{}
+ 
+ \begin{document}
+ 	
+ 	
+ 	\maketitle % Print the title
+ 	\thispagestyle{empty}
+ 	
+ 	
+ 	\newpage
+ 	
+ 	\begin{abstract}
+ 		The commercial peace literature has been focused on whether/how economic interdependence depresses conflict initiation. However, its impact on conflict duration has not been explored. In this paper, I employ a simple "war of attrition" model to examine how the costs of economic disruption over time affect states' choices over the optimal timing of ending a conflict. In addition, I argue that the logic of asymmetric dependence applies better in the reasoning of conflict duration, rather than initiation as the conventional wisdom suggests.\\
+		 
+		Key Words: trade and conflict, crisis bargaining, duration
+ 	\end{abstract}
+ 	\thispagestyle{empty}
+
+ 	
+ 	
+ 	\clearpage
+ 	\pagenumbering{arabic} 
+ 
+ 	
+ 	The commercial peace literature finds a robust relation between economic interdependence and peace \citep{OnealRusset1997,GartzkeLiBoehmer2001,PolachekXiang2010}. Specifically, economic interdependence promotes peace by suppressing conflict initiation (though scholars differ on the specific mechanism). In addition, researchers suggest that asymmetric dependence may sabotage such a peaceful impact because it either renders one party too vulnerable or breaks down the costly signaling mechanism. This line of literature appears to neglect the possible relation between economic interdependence and conflict duration. However, any explanation of war initiation without why and how war ends is incomplete \citep{Wagner2000,Ramsay2008}.\\
+ 	
+ 	Moreover, the relation between economic interdependence and war duration/termination is theoretically intriguing. 
+ 	Each state's ability to impose and bear economic costs over time dictate how patient they can be duration a conflict. This patience and its variance between states determine how long a country is willing to and capable of holding out in a conflict. The arguments about asymmetric dependence and vulnerability \citep{Hirschman1980,KeohaneNye1977,Wagner1988} appear to fit better in this case in that states that are relatively independent can hold out longer in a conflict and should therefore enjoy bargaining power.\\
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	\newpage
+ 	\bibliography{libr}
+ \end{document}
+ 
